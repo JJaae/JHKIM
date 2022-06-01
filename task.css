@@ -1,0 +1,266 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@1,700&display=swap');
+        
+        * {
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @media (max-width: 767px){
+            body{width:auto}
+            nav{width:auto; float:none;}
+            header{width:auto}
+        }
+    
+       body{
+           background-color: #e8faf9;
+        }
+       
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: auto;
+        }
+        .container{
+            margin: 0 auto;
+            width: auto;
+        }
+        header {
+            width: auto;
+            height: 110px;
+            background-color: #656666;
+        }
+
+        #logo {
+            float: left;
+            width: 250px;
+            height: 100px;
+            line-height: 100px;
+            padding-left: 40px;
+        }
+
+        #logo h1 {
+            font-family: 'Kodchasan', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+            color: rgb(255, 255, 255);
+            text-shadow: 0 -1px 0 #222;
+        }
+
+        nav {
+            float: right;
+            width: 400px;
+            height: 100px;
+            font-size: 15px;
+            color: white;
+            position: absolute;
+            top: 72px;
+            padding-right: 30px;
+        }
+        .first{
+            position: relative;
+            display: block;
+        }
+        .second{
+            position: relative;
+            display: none;
+        }
+        .third{
+            position: relative;
+            display: none;
+        }
+        header a {
+            color: white;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #topMenu {
+            height: 60px;
+            width:auto;
+        }
+
+        #topMenu>li {
+            float: right;
+            position: relative;
+            
+        }
+
+        #topMenu>li>a {
+            display: block;
+            color: #fff;
+            font-weight: 600;
+            text-shadow: 0 1px #07c;
+            padding: 9px 40px;
+        }
+
+        #topMenu>li>a:hover {
+            color: #000;
+            text-shadow: 0 -1px #07c;
+        }
+
+        #topMenu>li>ul {
+            display: none;
+            position: absolute;
+            width: 120px;
+            background-color: rgba(255, 255, 255, 0.8);
+            right: 1px;
+            left: 0px;
+            margin: 0;
+        }
+
+        #topMenu>li>ul>li {
+            padding: 10px 10px 10px 30px;
+        }
+
+        #topMenu>li>ul>li>a {
+            font-size: 16px;
+            padding: 0px;
+            color: #000;
+        }
+
+        #topMenu>li:hover>ul {
+            display: block;
+            z-index: 10;
+        }
+
+        #topMenu>li>ul>li>a:hover {
+            color: #f00;
+            
+        }
+
+        #slideShow {
+            clear: both;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #slides {
+            position: absolute;
+        }
+
+        #slides>img {
+            width: 100%;
+            height: 500px;
+            float: left;
+        }
+
+        #contents {
+            width: auto;
+            height: 300px;
+            background-color: rgb(243, 243, 243)
+            
+        }
+
+        #tabMenu {
+            float: left;
+            width: auto;
+            height: 100%;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+
+        #tabMenu input[type="radio"] {
+            display: none;
+            
+        }
+
+
+        #tabMenu label {
+            display: inline-block;
+            margin: 0 0;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #aaa;
+            border: 1px solid transparent;
+        }
+
+        #tabMenu label:hover {
+            color: #222;
+            cursor: pointer;
+        }
+
+        #tabMenu input:checked + label {
+            color : #b00;    
+            border: 1px solid #ddd;
+            background-color: #eee;
+        }
+
+      
+        .tabContent{
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd; 
+            
+        }
+
+        .tabContent h2{
+            display: none;
+        }
+        
+        #notice ul{
+            list-style: disc;
+            margin-left: 30px;
+        }
+
+        #notice ul li{
+            font-size: 16px;
+            line-height: 2.5;
+            font-size: 20px;
+        }
+
+        #gallery ul li{
+            margin-left: 30px;
+            line-height: 2.5;
+            font-size: 20px;
+        }
+        #good ul li{
+            margin-left: 30px;
+            line-height: 2.5;
+            font-size: 20px;
+        }
+
+        #link {
+            float: right;
+            width: 600px;
+            height: 100%;
+            background-color: white;
+            overflow: hidden;
+            position: relative;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #link>a{
+            position: absolute;
+            background-color: gray;
+            color: white;
+        }
+        #tab1:checked ~ #notice,
+        #tab2:checked ~ #gallery,
+        #tab3:checked ~ #good{
+            display: block;
+        }
+        
+        #slidslides_link {
+            position: absolute;
+        }
+
+        #slides_link>img {
+            width: 100%;
+            height: 100%;
+        }
+        
