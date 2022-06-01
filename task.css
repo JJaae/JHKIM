@@ -6,17 +6,19 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
-        @media (max-width: 767px){
-            body{width:auto}
-            nav{width:auto; float:none;}
-            header{width:auto}
-        }
     
        body{
            background-color: #e8faf9;
         }
-       
+        button{
+            width: 50px;
+            height: 50px;
+        }
+        .image{
+            width: 200px;
+            height: 200px;
+            
+        }
         a {
             text-decoration: none;
         }
@@ -24,14 +26,41 @@
         ul {
             list-style: none;
         }
-
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+          }
+          .table th,
+          .table td {
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #ccc;
+          }
+           
+        .table th,
+        .table td {
+	        border-color: #ffffff;  
+        }
+        .table thead th {
+            border-bottom: #ffffff;
+        }
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #ccc;
+          }
+          
+          .table tbody + tbody {
+            border-top: 2px solid #ccc;
+          }
         #container {
             margin: 0 auto;
-            width: auto;
+            width: 1000px;
         }
         .container{
-            margin: 0 auto;
-            width: auto;
+            margin: 0;
+            width: 1000px;
         }
         header {
             width: auto;
@@ -57,7 +86,7 @@
 
         nav {
             float: right;
-            width: 400px;
+            width: 700px;
             height: 100px;
             font-size: 15px;
             color: white;
@@ -222,12 +251,7 @@
             font-size: 20px;
         }
 
-        #gallery ul li{
-            margin-left: 30px;
-            line-height: 2.5;
-            font-size: 20px;
-        }
-        #good ul li{
+        #gallery ul li, #good ul li, #MBTI ul li{
             margin-left: 30px;
             line-height: 2.5;
             font-size: 20px;
@@ -251,7 +275,8 @@
         }
         #tab1:checked ~ #notice,
         #tab2:checked ~ #gallery,
-        #tab3:checked ~ #good{
+        #tab3:checked ~ #good,
+        #tab4:checked ~ #MBTI{
             display: block;
         }
         
@@ -263,4 +288,8 @@
             width: 100%;
             height: 100%;
         }
-        
+        @media (max-width: 767px){
+            nav{width:auto; float:none;}
+            header, #container, body {width:auto}
+            .image{width:150px; height:150px;}
+        }
